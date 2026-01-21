@@ -1,6 +1,8 @@
-module.exports = {
-  webpack: (config) => {
-    config.optimization.minimize = false;
-    return config;
-  }
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: false,
+  output: "standalone",
+  swcMinify: false
 };
+
+module.exports = nextConfig;
