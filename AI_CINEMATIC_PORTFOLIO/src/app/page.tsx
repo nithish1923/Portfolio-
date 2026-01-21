@@ -1,30 +1,12 @@
 import SceneClient from "./SceneClient";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
-export default function Page(): JSX.Element {
+export default function Page() {
   return (
     <main style={{ height: "500vh", background: "black" }}>
       <SceneClient />
-
-      <a
-        href="/Nithish_Kondapaka_Resume.pdf"
-        download
-        style={{
-          position: "fixed",
-          bottom: 30,
-          right: 30,
-          padding: "12px 18px",
-          borderRadius: 8,
-          background: "#00eaff",
-          color: "black",
-          fontWeight: 600,
-          textDecoration: "none",
-          zIndex: 20
-        }}
-      >
-        Download Resume
-      </a>
     </main>
   );
 }
