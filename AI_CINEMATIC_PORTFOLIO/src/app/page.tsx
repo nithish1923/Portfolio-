@@ -1,17 +1,15 @@
-export const dynamic = "force-dynamic";
-
 'use client';
 
-import dynamic from "next/dynamic";
+export const dynamic = "force-dynamic";
 
-// 🔥 Disable SSR for Three.js scene (CRITICAL)
-const Scene = dynamic(() => import("./Scene"), { ssr: false });
+import dynamicImport from "next/dynamic";
+
+const Scene = dynamicImport(() => import("./Scene"), { ssr: false });
 
 export default function Home() {
   return (
     <main style={{ height: '500vh', background: 'black' }}>
       <Scene />
-
       <a
         href="/Nithish_Kondapaka_Resume.pdf"
         download
