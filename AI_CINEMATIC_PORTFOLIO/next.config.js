@@ -1,1 +1,6 @@
-module.exports = { reactStrictMode: false };
+module.exports = {
+  webpack: (config) => {
+    config.optimization.minimize = false;
+    return config;
+  }
+};
