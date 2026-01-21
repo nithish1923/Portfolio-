@@ -16,5 +16,9 @@
     "@react-three/drei": "^9.92.0",
     "@react-three/postprocessing": "^2.15.1",
     "gsap": "^3.12.5"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
   }
 }
